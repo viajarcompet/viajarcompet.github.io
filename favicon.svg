@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ícone: avião e pata">
+  <rect width="64" height="64" rx="14" fill="#1f3d36"/>
+  <path fill="#f4efe6" d="M46 14l-9 11-11-2 14 10-8 13 8-8 4 14 4-14 12 2-9-10 9-11-14 5z"/>
+  <ellipse cx="20" cy="46" rx="5.2" ry="6.2" fill="#e8c07d"/>
+  <circle cx="12.5" cy="40.5" r="2.4" fill="#e8c07d"/>
+  <circle cx="18" cy="37.2" r="2.4" fill="#e8c07d"/>
+  <circle cx="24.5" cy="38.2" r="2.4" fill="#e8c07d"/>
+  <circle cx="27.8" cy="43.8" r="2.3" fill="#e8c07d"/>
+</svg>
