@@ -269,6 +269,46 @@ footer.site {
   font-size: 0.9rem;
 }
 
+
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+  vertical-align: -0.22em;
+  margin-right: 0.4rem;
+  color: var(--accent);
+  flex: 0 0 auto;
+}
+.disclaimer strong,
+.note strong {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+.disclaimer .icon,
+.note .icon {
+  margin-right: 0;
+  margin-top: 0.15rem;
+  color: var(--warn-ink);
+}
+.section-photo {
+  margin: 1.35rem 0 0.2rem;
+}
+.section-photo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }

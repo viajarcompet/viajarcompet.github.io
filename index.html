@@ -93,6 +93,44 @@
 </head>
 <body>
   <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-list" viewBox="0 0 24 24">
+      <circle cx="4" cy="6" r="1.15" fill="currentColor"/>
+      <circle cx="4" cy="12" r="1.15" fill="currentColor"/>
+      <circle cx="4" cy="18" r="1.15" fill="currentColor"/>
+      <path d="M8 6h12M8 12h12M8 18h12" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4v13"/>
+      <path d="M5 21h14"/>
+      <path d="M4 9h16"/>
+      <path d="M4 9 2 15h4L4 9z"/>
+      <path d="M20 9l-2 6h4l-2-6z"/>
+      <circle cx="12" cy="4" r="1.2" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17.8 19.2 16 13l5.2-3.4a1.8 1.8 0 0 0-1.8-3.1L6.6 11.3 3.2 9.4 2 10.7l4 2.6L2 16.7l1.4.9 3.6-2.8 7.4 1.8 1.1 4.6 2.3-1z"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="m8 12.3 2.8 2.8 5.2-5.6"/>
+    </symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3.2 22 20.2H2L12 3.2z"/>
+      <path d="M12 9.5v5"/>
+      <path d="M12 17.4h.01"/>
+    </symbol>
+    <symbol id="i-question" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M9.4 9.4a2.6 2.6 0 1 1 3.5 2.4c-.7.4-1.1 1-1.1 1.8"/>
+      <path d="M12 17.3h.01"/>
+    </symbol>
+    <symbol id="i-document" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 3.5h7.2L19 8.3V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1z"/>
+      <path d="M14.2 3.5V8.3H19"/>
+      <path d="M9 13h6M9 16.5h6"/>
+    </symbol>
+  </svg>
   <header class="site">
     <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;">
       <a class="brand" href="#conteudo">
@@ -121,7 +159,7 @@
 
       <div class="prose-wrap">
         <div class="disclaimer" role="note">
-          <strong>Confirme sempre com a companhia antes de comprar a passagem ou a caixa.</strong>
+          <strong><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-alert"/></svg>Confirme sempre com a companhia antes de comprar a passagem ou a caixa.</strong>
           Regras, vagas, preços e exigências sanitárias mudam. O que vale é o contrato do seu voo e a conferência no balcão. Esta página é informativa e independente: não substitui o site, o aplicativo ou a central da empresa, nem o Ministério da Agricultura e Pecuária (MAPA) em viagem internacional. Não é conselho veterinário e não orienta sedar, medicar ou avaliar a saúde do animal.
         </div>
       </div>
@@ -129,7 +167,7 @@
 
     <div class="wrap">
       <nav class="toc" aria-label="Índice">
-        <h2>Nesta página</h2>
+        <h2><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-list"/></svg>Nesta página</h2>
         <ol>
           <li><a href="#tabela">Tabela comparativa</a></li>
           <li><a href="#resumo">Resumo por companhia</a></li>
@@ -141,7 +179,7 @@
       </nav>
 
       <section id="tabela">
-        <h2>Tabela comparativa</h2>
+        <h2><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-scale"/></svg>Tabela comparativa</h2>
         <p>Deslize a tabela para o lado no celular. A primeira coluna permanece visível. Cada fato aponta a fonte; a data da conferência é 18/11/2026, salvo quando indicado o contrário.</p>
         <div class="table-scroll">
           <table>
@@ -237,13 +275,17 @@
           </table>
         </div>
         <p class="src">ANAC (página “Transporte de animais”, modificada em 28/11/2025, aberta em 18/11/2026): o transporte de cão-guia é obrigatório e gratuito, no chão da cabine, ao lado da pessoa com deficiência visual, com arreio e sem focinheira. Já o transporte de animal de estimação ou de suporte emocional <strong>não é obrigatório</strong>; cada empresa define se oferece o serviço, preço, peso, medidas e local (cabine ou porão). A norma vigente citada pela ANAC é a Portaria nº 17.476/SAS, de 18 de julho de 2025. A agência não define limite de peso nem medida de caixa: isso é da companhia. Na inspeção de segurança, o animal sai da caixa e não passa por raio-X; só a caixa passa.</p>
+        <figure class="section-photo">
+          <img src="img/cao-pequeno-na-caixa-flexivel-sob-o-assento.webp" alt="Cão pequeno de pelagem clara dentro de uma caixa de transporte flexível, no chão, sob o assento de um avião." width="1200" height="675" loading="lazy">
+        </figure>
+
       </section>
 
       <section id="resumo">
-        <h2>Resumo por companhia</h2>
+        <h2><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-plane"/></svg>Resumo por companhia</h2>
         <div class="cards">
           <article class="card">
-            <h3>GOL</h3>
+            <h3><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-plane"/></svg>GOL</h3>
             <ul>
               <li>Cabine: cão ou gato, 6 meses, até 12 kg com a caixa (6 kg em Caracas).</li>
               <li>Caixa rígida 43×32×22 cm ou flexível 43×32×24 cm (comprimento × largura × altura), no chão, na janela.</li>
@@ -254,7 +296,7 @@
             </ul>
           </article>
           <article class="card">
-            <h3>LATAM</h3>
+            <h3><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-plane"/></svg>LATAM</h3>
             <ul>
               <li>Cabine: cão ou gato que caiba e se mova na caixa; a página não fixa teto de peso.</li>
               <li>Flexível 40×28×25 cm ou rígida 36×33×19 cm (comprimento × largura × altura), no corredor.</li>
@@ -265,7 +307,7 @@
             </ul>
           </article>
           <article class="card">
-            <h3>Azul</h3>
+            <h3><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-plane"/></svg>Azul</h3>
             <ul>
               <li>A página oficial em português existia em 18/11/2026, mas o conteúdo completo não abriu nesta consulta (acesso negado pelo servidor).</li>
               <li>No arquivo oficial de 15/05/2026, o metadado cita cão ou gato, 10 kg e caixa 43×31×20 cm.</li>
@@ -274,13 +316,19 @@
             </ul>
           </article>
         </div>
+        <figure class="section-photo">
+          <img src="img/gato-na-caixa-no-balcao-do-aeroporto.webp" alt="Gato malhado em caixa de transporte flexível sobre o balcão de um aeroporto, com a pista visível ao fundo." width="1200" height="675" loading="lazy">
+        </figure>
       </section>
     </div>
 
     <div class="prose-wrap">
       <section id="checklist">
-        <h2>Checklist de check-in</h2>
+        <h2><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-check"/></svg>Checklist de check-in</h2>
         <p>Use isto no dia, depois de ter o serviço já confirmado. Não substitui a lista da sua companhia.</p>
+        <figure class="section-photo">
+          <img src="img/mala-e-itens-de-viagem-para-pet.webp" alt="Caixa de transporte aberta sobre a cama, com toalha, tigela, guia e brinquedo arrumados para a viagem." width="1200" height="675" loading="lazy">
+        </figure>
         <ol class="checklist">
           <li><strong>Confirmação do serviço na reserva.</strong> Sem isso, a passagem do tutor não garante o pet. Na LATAM, o cartão de embarque com pet só sai no aeroporto.</li>
           <li><strong>Chegue no horário de balcão.</strong> A GOL pede 2 horas no doméstico e 3 horas no internacional, e o check-in com pet é no balcão, não só no celular.</li>
@@ -292,10 +340,13 @@
           <li><strong>Inspeção de segurança.</strong> Segundo a ANAC, o animal sai da caixa e não entra no raio-X; a caixa entra vazia. Planeje uma coleira ou guia para esse momento, se a companhia permitir o animal fora da caixa só ali.</li>
           <li><strong>O pet permanece na caixa</strong> enquanto as regras da empresa exigirem — embarque, voo e desembarque. Não conte com colo ou assento extra: a GOL diz que não se compra poltrona só para o animal.</li>
         </ol>
+        <figure class="section-photo">
+          <img src="img/documentos-e-carteira-de-vacinacao-do-pet.webp" alt="Carteira de vacinação, papéis, coleira, guia e fita métrica organizados sobre uma mesa de madeira." width="1200" height="675" loading="lazy">
+        </figure>
       </section>
 
       <section id="erros">
-        <h2>Erros comuns (e caros)</h2>
+        <h2><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-alert"/></svg>Erros comuns (e caros)</h2>
         <ul class="mistakes">
           <li><strong>Comprar a passagem e só depois descobrir que não há vaga para o pet.</strong> Nas três empresas o serviço é adicional e limitado. Na LATAM, inclusive, o voo precisa ser operado por ela, sem parceira.</li>
           <li><strong>Usar o limite de peso só do animal.</strong> Na GOL o teto inclui a caixa. Uma caixa rígida “no limite” facilmente empurra o conjunto para cima de 12 kg.</li>
@@ -306,10 +357,13 @@
           <li><strong>Assumir que o porão da GOL está à disposição se o cão for grande.</strong> O produto de porão até 30 kg aparece como suspenso na página atual; o aviso antigo de imprensa também falava do GOLLOG. Trate o porão da GOL como incerto até a empresa confirmar o seu caso.</li>
           <li><strong>Tratar animal de suporte emocional como cão-guia.</strong> São categorias diferentes na ANAC. A GOL diz que não transporta ESAN.</li>
         </ul>
+        <figure class="section-photo">
+          <img src="img/cao-olhando-pela-janela-do-aviao.webp" alt="Cão de pelagem dourada dentro de uma caixa de transporte, olhando pela janela do avião para as nuvens." width="1200" height="675" loading="lazy">
+        </figure>
       </section>
 
       <section id="faq" class="faq">
-        <h2>Perguntas frequentes</h2>
+        <h2><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-question"/></svg>Perguntas frequentes</h2>
 
         <details>
           <summary>O peso máximo inclui a caixa de transporte?</summary>
@@ -342,7 +396,7 @@
       </section>
 
       <section id="fontes">
-        <h2>Fontes oficiais conferidas</h2>
+        <h2><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-document"/></svg>Fontes oficiais conferidas</h2>
         <p>Todos os links abaixo foram abertos ou baixados em 18 de novembro de 2026, salvo o caso da Azul, explicado no item correspondente.</p>
         <ul class="sources">
           <li>GOL — Dog&amp;Cat Cabine: <a href="https://www.voegol.com.br/dog-cat-cabine">https://www.voegol.com.br/dog-cat-cabine</a> (18/11/2026).</li>
@@ -356,7 +410,7 @@
           <li>ANAC — Transporte de animais (publicada em 06/12/2023, modificada em 28/11/2025): <a href="https://www.gov.br/anac/pt-br/assuntos/passageiros/transporte-de-animais-1">https://www.gov.br/anac/pt-br/assuntos/passageiros/transporte-de-animais-1</a> (aberta em 18/11/2026).</li>
         </ul>
         <div class="note">
-          <strong>Como esta página deve ser atualizada.</strong>
+          <strong><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24"><use href="#i-alert"/></svg>Como esta página deve ser atualizada.</strong>
           Quando a companhia mudar peso, medida, preço ou documento, o valor desta página cai. O caminho honesto é reabrir as fontes, trocar a data “atualizado em” e só então republicar. Não copie tabela de blog, comparador ou rede social.
         </div>
       </section>
