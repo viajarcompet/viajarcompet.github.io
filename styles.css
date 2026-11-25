@@ -208,10 +208,33 @@ tbody th {
   background: #efe8db;
   font-weight: 650;
   width: 12rem;
+  max-width: 12rem;
   position: sticky;
   left: 0;
   z-index: 1;
   box-shadow: 4px 0 8px rgba(28, 26, 22, 0.04);
+}
+.row-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+.row-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 14%, #fff);
+  color: var(--accent);
+  flex: 0 0 auto;
+}
+.row-icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: block;
 }
 tbody tr:nth-child(even) td { background: #fbf7f0; }
 tbody tr:hover td { background: #f3eee4; }
